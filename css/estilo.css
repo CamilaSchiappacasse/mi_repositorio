@@ -41,6 +41,7 @@ body {
     /*max-width: 1080px;*/
     text-align: center;
     overflow: auto;
+    background-image: radial-gradient(#e10e81,#021033);
 }
 
 .titulo {
@@ -122,60 +123,4 @@ body {
 .img3 {
     grid-area: img3;
     width: 200px;
-}
-/*mediaqueries*/
-@media only screen and (min-width: 0px) and (max-width: 768px){
-	/* SERVICIO */
-	.gridContainerIndex {
-		display: grid;
-		grid-template-areas: 
-		"logo"
-		"nav"
-		"img"
-		"main"
-		"footer";
-		grid-template-columns: 100%;
-		grid-template-rows: 100px 150px 1fr 350px 200px;
-	}
-
-	header{
-		grid-area: logo;
-
-	}
-	nav {
-		grid-area: nav;
-	}
-	.img {
-		grid-area: img;
-	}
-	img{
-		width: 100%;
-		height: auto;
-	}
-	main {
-		grid-area: main;
-	}
-	.footer{
-		grid-area: footer;
-		background-color: blue;
-	}
-	a{
-		text-decoration: none;
-		color: blue;
-
-	}
-	li{
-		list-style-type: none;
-		padding: 10px;
-	
-	}
-	.bg-yellow{
-		background-color: yellow;
-	}
-	p {
-		font-size: 30px;
-		color: red;
-	}
-	.border {
-	border: 1px dashed lightblue; }
 }
