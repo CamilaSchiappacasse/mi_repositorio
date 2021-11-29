@@ -1,0 +1,181 @@
+/*Header*/
+/*Nav*/
+.barraNav {
+    display: flex; 
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 200px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+li {
+    list-style-type: none;
+    padding: 15px;
+}
+/*Logo*/
+body header nav img {
+    height: 90px;
+    padding-right: 350px; 
+}
+/*Body*/
+
+.contenido {
+    display: flex;
+    flex-direction: column;
+}
+.pad20 {
+    padding: 20px;
+}
+body {
+    background-color:#021033;
+    color: white;
+    font-family: 'IBM Plex Sans Hebrew';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/ibmplexsanshebrew/v1/BCa5qYENg9Kw1mpLpO0bGM5lfHAAZHhDXEUJ2E06jDu19Q.woff2) format('woff2');
+    unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
+    /*max-width: 1080px;*/
+    text-align: center;
+    overflow: auto;
+}
+
+.titulo {
+    font-size: 40px;
+    color: #e10e81;
+
+}
+.encabezados {
+    font-size: 30px;
+    color: #e10e81;
+}
+
+/*.logos {
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} */
+
+.tabla {
+    width: 400px;
+    margin: 0 auto;
+}
+.plataformas {
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.subtitulo {
+    color: #e10e81;
+    font-size: 25px;
+
+}
+.local {
+    width: 300px;
+}
+
+.fotoIndex {
+    width: 450px;
+}
+
+/*Footer*/
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 12px;
+}
+
+
+/*GRIDS*/
+.gridContainerIndex{
+    display: grid;
+    grid-template-areas:
+    "titulo titulo titulo"
+    "img1 img3 img2"
+    "subtitulo subtitulo subtitulo";
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100px 300px 100px;
+}
+.img1 {
+    grid-area: img1;
+    width: 200px;
+}
+.titulo {
+    grid-area: titulo;
+}
+
+.img2 {
+    grid-area: img2;
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+} 
+.subtitulo {
+    grid-area: subtitulo;
+}
+.img3 {
+    grid-area: img3;
+    width: 200px;
+}
+/*mediaqueries*/
+@media only screen and (min-width: 0px) and (max-width: 768px){
+	/* SERVICIO */
+	.gridContainerIndex {
+		display: grid;
+		grid-template-areas: 
+		"logo"
+		"nav"
+		"img"
+		"main"
+		"footer";
+		grid-template-columns: 100%;
+		grid-template-rows: 100px 150px 1fr 350px 200px;
+	}
+
+	header{
+		grid-area: logo;
+
+	}
+	nav {
+		grid-area: nav;
+	}
+	.img {
+		grid-area: img;
+	}
+	img{
+		width: 100%;
+		height: auto;
+	}
+	main {
+		grid-area: main;
+	}
+	.footer{
+		grid-area: footer;
+		background-color: blue;
+	}
+	a{
+		text-decoration: none;
+		color: blue;
+
+	}
+	li{
+		list-style-type: none;
+		padding: 10px;
+	
+	}
+	.bg-yellow{
+		background-color: yellow;
+	}
+	p {
+		font-size: 30px;
+		color: red;
+	}
+	.border {
+	border: 1px dashed lightblue; }
+}
